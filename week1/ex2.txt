@@ -1,0 +1,73 @@
+    1  sudo apt install gcc
+    2  sudo apt-get install virtualbox
+    3  whoami
+    4  hostname
+    5  man man
+    6  less
+    7  less home
+    8  less kirillgli
+    9  head
+   10  grep
+   11  Hello 2>error.log
+   12  /home
+   13  ls
+   14  pwd
+   15  ls
+   16  cd home
+   17  cd
+   18  ls
+   19  ls -l
+   20  ls > list.txt 
+   21  ls
+   22  head -n 3 < file.txt
+   23  head -n 3 < list.txt
+   24  ls .
+   25  ls ..
+   26  ls ...
+   27  ls ..
+   28  sort
+   29  ls
+   30  pwd
+   31  mkdir Week1
+   32  /pwd
+   33  pwd
+   34  cd Week1
+   35  rm -r
+   36  rm
+   37  rm -r Week1
+   38  cd kirillgli
+   39  cd
+   40  rm -r Week1
+   41  ls
+   42  cd
+   43  mkdir week1
+   44  cd week1
+   45  gedit ex0.txt
+   46  sudo apt install gedit
+   47  --fix-missing
+   48  gedit &
+   49  apt-get install nano
+   50  ps aux | grep -i apt
+   51  cd week1
+   52  ls -l /usr/bin/"gcc" > /home/kirillgli/week1
+   53  ls -l /usr/bin/"gcc" > /home/kirillgli/week1/ex1.txt
+   54  ls
+   55  stdout ex1.txt
+   56  stdout
+   57  man stdout
+   58  ls  ex1.txt
+   59  ls .
+   60  ls..
+   61  ls ..
+   62  less ex1.txt
+   63  gedit meow.txt
+   64  sudo apt install gedit
+   65  apt-get update
+   66  ды
+   67  ls
+   68  cd week1
+   69  ls -l
+   70  ls /usr/bin -r | grep gcc > ex1.txt 
+   71  ls
+   72  less ex1.txt
+   73  history > ex2.txt
