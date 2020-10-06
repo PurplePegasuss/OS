@@ -1,0 +1,11 @@
+My solution to the problem:
+
+N_pages = total amount of bits to be filled / total amount of bits can be hold by one page.
+
+As we have 16 bit virtual addresses, we need to store up to 2^16 addresses.
+As we also have 8 Kb (not KB by the way) per page we can store 8 * 1024 * 1024 = 2^13 (b) per page.
+
+Thus, we have:
+N = 2^16 b / 2 ^13 b = 2^3 = 8 
+
+Answer: 8 pages.

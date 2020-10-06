@@ -1,0 +1,60 @@
+Using top -d 1 command:
+
+top - 18:51:29 up  2:01,  3 users,  load average: 2,85, 2,76, 2,83
+Tasks: 304 total,   2 running, 302 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9,0 us,  3,7 sy,  0,0 ni, 85,6 id,  0,0 wa,  1,2 hi,  0,4 si,  0,0 st
+MiB Mem :  15857,1 total,   3844,3 free,   5121,6 used,   6891,1 buff/cache
+MiB Swap:  16384,0 total,  16384,0 free,      0,0 used.   9566,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+  27006 kirillg   20   0 6068060 467928 123284 S  84,0   2,9  24:28.04 zoom     
+   1705 kirillg   20   0 4039288 170876 103920 R  14,0   1,1  15:02.09 kwin_x11 
+   1792 kirillg    9 -11 2333484  16352  12140 S  14,0   0,1   7:04.88 pulseau+ 
+    961 root      20   0 1050444 195476 122228 S  13,0   1,2  16:26.49 Xorg     
+   1799 kirillg   20   0 4339948 710224 233968 S   8,0   4,4  29:35.56 MainThr+ 
+   2099 kirillg   20   0 3523544 499824 176204 S   4,0   3,1  17:14.23 Web Con+ 
+  13527 kirillg   20   0  733752  48580  37080 S   4,0   0,3   0:14.50 xfce4-t+ 
+    296 root      20   0  308600 196640 193988 S   3,0   1,2   4:31.24 systemd+ 
+   1743 kirillg   20   0 5568732 480884 186360 S   3,0   3,0   2:57.84 plasmas+ 
+  31868 kirillg   20   0 2958972 348360 145736 S   3,0   2,1   0:57.37 Web Con+ 
+   7838 kirillg   20   0 4968948 515016 141168 S   2,0   3,2   4:56.83 telegra+ 
+  10087 kirillg   20   0 2577468 217808 121916 S   2,0   1,3   0:34.57 file://+ 
+  19992 root      20   0       0      0      0 I   2,0   0,0   0:36.26 kworker+ 
+    832 root       0 -20       0      0      0 D   1,0   0,0   0:25.64 kworker+ 
+   1752 kirillg   20   0  421628  43448  38092 S   1,0   0,3   0:02.84 polkit-+ 
+   5649 kirillg   20   0 3350044 589436 215516 S   1,0   3,6  10:58.33 Web Con+ 
+
+
+After the top command alongside with ex2:
+
+top - 18:53:25 up  2:03,  3 users,  load average: 2,94, 2,89, 2,87
+Tasks: 306 total,   3 running, 302 sleeping,   1 stopped,   0 zombie
+%Cpu(s):  9,1 us,  3,6 sy,  0,0 ni, 85,5 id,  0,2 wa,  1,2 hi,  0,4 si,  0,0 st
+MiB Mem :  15857,1 total,   3696,1 free,   5271,1 used,   6889,8 buff/cache
+MiB Swap:  16384,0 total,  16384,0 free,      0,0 used.   9427,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+  27006 kirillg   20   0 6068068 467848 123292 R  89,1   2,9  26:13.37 zoom     
+   1705 kirillg   20   0 4039644 170916 103920 S  19,9   1,1  15:20.59 kwin_x11 
+    961 root      20   0 1048216 195476 122228 R  19,2   1,2  16:42.42 Xorg     
+   1792 kirillg    9 -11 2333484  16352  12140 S  13,2   0,1   7:20.80 pulseau+ 
+   1799 kirillg   20   0 4339948 727456 236756 S   8,3   4,5  29:50.83 MainThr+ 
+  13527 kirillg   20   0  733752  48580  37080 S   7,9   0,3   0:16.76 xfce4-t+ 
+   2099 kirillg   20   0 3525592 517620 176204 S   3,6   3,2  17:19.80 Web Con+ 
+  10087 kirillg   20   0 2578492 219336 122104 S   2,3   1,4   0:38.83 file://+ 
+   1743 kirillg   20   0 5569820 481020 186360 S   2,0   3,0   2:59.32 plasmas+ 
+    296 root      20   0  324984 206068 203416 S   1,7   1,3   4:34.69 systemd+ 
+  31868 kirillg   20   0 2958972 350008 145736 S   1,7   2,2   0:59.58 Web Con+ 
+   7838 kirillg   20   0 4977144 515016 141168 S   1,3   3,2   4:59.70 telegra+ 
+  19992 root      20   0       0      0      0 I   1,3   0,0   0:38.20 kworker+ 
+    832 root       0 -20       0      0      0 I   1,0   0,0   0:26.49 kworker+ 
+  19787 kirillg   20   0 5041556 160412 104912 S   1,0   1,0   1:17.72 code     
+  34008 kirillg   20   0  135512 134160   1068 S   1,0   0,8   0:00.13 ex2      
+   1959 kirillg   20   0  160780   6656   5812 S   0,7   0,0   0:05.36 at-spi2+ 
+
+Obtained results:
+Top command shows current statistics for usage of memory/cpu with time spent,PID's
+and virtual memory addresses. It useful then you need to know how much memory is given
+for a current process in current time. After launching it on bg right with the "ex2.c"
+we can observe it's virtual address - 135512, how much % memory it takes - 0.8, PID - 
+34008, and other useful attributes. 

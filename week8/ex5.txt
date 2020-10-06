@@ -1,0 +1,4 @@
+A physical address is a real binary address attached to a part of physical memory. 
+A virtual address is a binary address attached to a part of virtual memory. 
+It is (usually) written in the program code and mapped to physical memory with the help of MMU.
+Virtual address memory space may cover more address spaces than a physical one, as it solves the problem of physical memory limitation.
