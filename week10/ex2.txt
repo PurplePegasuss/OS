@@ -1,0 +1,15 @@
+Check i-node numbers of _ex2.txt:
+
+133859 _ex2.txt
+
+
+Tracing all links to file.txt:
+
+find .. -inum 133859
+../week10/_ex2.txt
+../week1/file.txt
+
+Remove all links from file.txt:
+
+find .. -inum 133859 -exec rm {} \; 
+(No output, just all links are removed.)
