@@ -1,0 +1,21 @@
+1)First, I've created an _ex3.txt file. Then, I gave all permissions to the file to make sure everything turned on before doing a task:
+    chmod -R 777 _ex3.txt
+
+    -rwxrwxrwx 1 kirillg kirillg 0 окт 20 18:26 _ex3.txt
+
+2)Then, I restricted execution permissions for the file:
+
+    chmod -R -x _ex3.txt
+
+    -rw-rw-rw- 1 kirillg kirillg 0 окт 20 18:26 _ex3.txt
+
+3) Giving permissions back to the owner and user:
+    chmod o+x _ex3.txt
+    chmod u+x _ex3.txt
+    -rwxrw-rwx 1 kirillg kirillg 0 окт 20 18:26 _ex3.txt
+
+4) Explanation:
+    Basically, these numbers are numerical interpretation of giving permissions with "chmod" command.
+    777: 4(r)+2(w)+1(x) - full access for each user type - user, group, others
+    660: 4(r)+2(w) for user and group,  no permissions for others
+    775: 4(r)+2(w)+1(x) for user and group, 4(r)+1(x) - no write permissions for others
