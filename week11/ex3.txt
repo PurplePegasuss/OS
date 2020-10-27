@@ -1,0 +1,6 @@
+Well, in the first case after we print the hello, our text isn't printed momentually,
+it stays in the buffer of the process, and fork happens with doubling the process. 
+As a result, we will have to Hello printed.
+
+In the second case, after \n our buffered is cleaned and forced to start another process
+without any buffered text.Thus, we will fork blank space!"
